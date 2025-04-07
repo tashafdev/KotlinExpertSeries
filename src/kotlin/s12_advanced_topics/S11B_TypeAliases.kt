@@ -1,4 +1,4 @@
 package kotlin.s12_advanced_topics
 
-class TypeAliases {
+class S11B_TypeAliases {
 }

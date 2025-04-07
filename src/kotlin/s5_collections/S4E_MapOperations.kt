@@ -1,4 +1,4 @@
 package kotlin.s5_collections
 
-class ListAndSetOperations {
+class S4E_MapOperations {
 }

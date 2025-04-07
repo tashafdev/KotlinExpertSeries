@@ -1,4 +1,4 @@
 package kotlin.s8_generics
 
-class ReifiedTypes {
+class S7D_ReifiedTypes {
 }
