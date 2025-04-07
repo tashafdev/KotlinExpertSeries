@@ -1,0 +1,2 @@
+package kotlin.s7_interfaces_and_inheritance
+
