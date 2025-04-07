@@ -1,2 +1,0 @@
-package kotlin.s19_clean_code_and_principles
-

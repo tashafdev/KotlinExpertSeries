@@ -1,32 +1,23 @@
 plugins {
-    kotlin("jvm") version "2.0.21"
-    application
+    kotlin("jvm") version "2.1.10"
 }
 
-group = "com.kotlin.expert"
-version = "1.0"
+group = "org.example"
+version = "1.0-SNAPSHOT"
 
 repositories {
     mavenCentral()
 }
 
 dependencies {
+    // Coroutines dependency
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.3")
     testImplementation(kotlin("test"))
 }
 
+tasks.test {
+    useJUnitPlatform()
+}
 kotlin {
-    compilerOptions {
-        jvmTarget.set(org.jetbrains.kotlin.gradle.dsl.JvmTarget.JVM_17)
-    }
-}
-
-
-application {
-    mainClass.set("MainKt") // Update to your actual main class if needed
-}
-
-dependencies {
-    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.3")
-    testImplementation(kotlin("test"))
+    jvmToolchain(22)
 }
