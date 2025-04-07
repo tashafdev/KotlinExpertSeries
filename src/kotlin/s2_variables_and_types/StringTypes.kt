@@ -1,0 +1,2 @@
+package kotlin.s2_variables_and_types
+

@@ -1,0 +1,4 @@
+package kotlin.s10_functional_programming
+
+class LambdasAndHOFs {
+}

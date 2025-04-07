@@ -1,2 +1,0 @@
-package kotlin.interfaces_and_inheritance
-

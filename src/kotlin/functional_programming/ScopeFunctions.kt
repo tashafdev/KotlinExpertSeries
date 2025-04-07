@@ -1,2 +1,0 @@
-package kotlin.functional_programming
-
