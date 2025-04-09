@@ -52,8 +52,15 @@ package s1_basics
     ---------------------------------------------------------------------------
 */
 
-fun main() {
-    // 🎉 Your very first Kotlin program!
-    println("Welcome to the Kotlin Basics Course!")  // Print a welcome message
-    println("In this journey, you'll become Kotlin-pro!") // Print another message
+//fun main() {
+//    // 🎉 Your very first Kotlin program!
+//    println("Welcome to the Kotlin Basics Course!")  // Print a welcome message
+//    println("In this journey, you'll become Kotlin-pro!") // Print another message
+//}
+
+
+
+fun main(){
+    println("My Name is tashaf I am  Software engineer")
+    println("Working In UAE ")
 }
