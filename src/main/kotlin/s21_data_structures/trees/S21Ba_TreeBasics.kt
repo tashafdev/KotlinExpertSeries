@@ -1,13 +1,27 @@
 package s21_data_structures.trees
 
-
 /*
  * -----------------------------------------------------
  * ✅ Lecture: Binary Tree Basics (S21Ba_TreeBasics.kt)
  * -----------------------------------------------------
- * A Binary Tree is a non-linear data structure where each node has at most two children.
- * Nodes are connected in a parent-child relationship.
- * Common operations include traversal (Preorder, Inorder, Postorder).
+ *
+ * 📌 A Binary Tree is a non-linear hierarchical data structure where each node
+ *     can have at most two children — called `left` and `right`.
+ *
+ * 🧠 Useful for:
+ * - Fast searching and sorted data (Binary Search Tree)
+ * - Parsing expressions (Expression Tree)
+ * - Representing hierarchies (UI, DOM, Filesystem)
+ *
+ * 🔍 Traversal Techniques:
+ * - Preorder:    Root → Left → Right
+ * - Inorder:     Left → Root → Right
+ * - Postorder:   Left → Right → Root
+ *
+ * ✅ Time Complexities:
+ * - Access/Search/Insert/Delete:
+ *     - Best: O(log n)
+ *     - Worst: O(n) (unbalanced)
  */
 
 // 1️⃣ Define a Node for Binary Tree
@@ -57,24 +71,37 @@ fun main() {
 
     // 6️⃣ Traversals
     println("\nPreorder Traversal:")
-    preorder(root) // Output: A → B → D → C
+    preorder(root) // A → B → D → C
 
     println("\n\nInorder Traversal:")
-    inorder(root) // Output: D → B → A → C
+    inorder(root) // D → B → A → C
 
     println("\n\nPostorder Traversal:")
-    postorder(root) // Output: D → B → C → A
+    postorder(root) // D → B → C → A
 }
 
+
 /*
- * 🔍 Real-World Use Cases:
- * - File system navigation (folders/files)
- * - Expression trees in compilers/calculators
- * - DOM representation in browsers
- * - AI decision-making trees
+ * -----------------------------------------------------
+ * 📱 Binary Trees in Android – Real Use Cases
+ * -----------------------------------------------------
  *
- * 🔟 Summary:
- * ✅ A Binary Tree has up to 2 child nodes per parent
- * ✅ Traversal orders matter for different tasks (e.g., printing, evaluating)
- * ✅ Understanding trees is essential for advanced data structures (BST, Heap, AVL)
+ * ✅ View Hierarchy Tree:
+ *    - Every ViewGroup (like ConstraintLayout) forms a tree of child views.
+
+ * ✅ Navigation Graph:
+ *    - Navigation destinations and subgraphs model a tree.
+
+ * ✅ Expression Evaluators:
+ *    - Calculator apps parse and evaluate input using expression trees.
+
+ * ✅ File Managers / Browsers:
+ *    - File directories and DOM trees are naturally represented as binary or N-ary trees.
+
+ * ✅ AI in Games:
+ *    - Game logic trees (like minimax) are based on binary trees for decision making.
+
+ * 🔹 Use Binary Trees when:
+ *    - You need hierarchical modeling
+ *    - You want structured traversal or sorted access
  */

@@ -55,3 +55,28 @@ fun main() {
  * ✅ Uses internal hash function to map keys to buckets
  * ✅ Essential for caching, counting, and indexing
  */
+
+/*
+ * -----------------------------------------------------
+ * 📱 HashMap in Android – Real Use Cases
+ * -----------------------------------------------------
+ *
+ * ✅ ViewHolder Caching in RecyclerView:
+ *    - Map item view types or positions to recycled ViewHolders for fast binding.
+ *
+ * ✅ Intent Extras Storage:
+ *    - Bundle primitive key‑value pairs for Activity/Fragment communication.
+ *
+ * ✅ Resource Lookup:
+ *    - Cache mappings from resource names to resource IDs or drawables.
+ *
+ * ✅ Fragment Tag Management:
+ *    - Associate fragment tags with fragment instances in FragmentManager.
+ *
+ * ✅ Preferences Simulation:
+ *    - In‑memory key‑value store mirroring SharedPreferences behavior during tests.
+ *
+ * 🔹 Use HashMap when:
+ *    - You need average O(1) access by key.
+ *    - Order does not matter and you need frequent inserts/removals.
+ */

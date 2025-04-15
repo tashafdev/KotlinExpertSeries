@@ -5,10 +5,32 @@ package s21_data_structures.trees
  * -----------------------------------------------------
  * ✅ Lecture: Binary Search Tree (Insert & Search) (S21Bc_BinarySearchTree.kt)
  * -----------------------------------------------------
- * A Binary Search Tree (BST) is a binary tree with ordered structure:
- * - Left child < Root < Right child
- * - Fast insertion, search, and deletion (avg O(log n))
+ *
+ * 📌 A Binary Search Tree (BST) is a special kind of binary tree
+ *     where the elements are stored in an ordered way:
+ *
+ *     🔹 Left subtree  → contains values less than the root
+ *     🔹 Right subtree → contains values greater than the root
+ *
+ * 🧠 Why use BST?
+ * - Efficient searching, insertion, and deletion
+ * - Preserves sorted order of elements
+ * - Forms the base for more advanced trees (AVL, Red-Black, Segment Trees)
+ *
+ * 📈 Average Time Complexity:
+ * - Search / Insert / Delete → O(log n) [when balanced]
+ * - Worst Case (skewed)      → O(n)
+ *
+ * 💡 Common Use Cases:
+ * - Indexing in databases
+ * - Autocomplete / Suggestion systems
+ * - Maintaining a sorted dataset with frequent updates
+ *
+ * ⚠️ Note:
+ * - BST performance depends on tree balance
+ * - Consider using self-balancing BSTs (AVL/Red-Black) for guaranteed O(log n)
  */
+
 
 // 1️⃣ Define the Node class
 class BSTNode(val value: Int) {
@@ -81,3 +103,34 @@ fun main() {
  * ✅ Ideal for fast searching and dynamic data updates
  */
 
+
+/*
+ * -----------------------------------------------------
+ * 📱 Binary Search Tree (BST) in Android – Real Use Cases
+ * -----------------------------------------------------
+ *
+ * ✅ Auto-Complete & Search Suggestions:
+ *    - Store and lookup user input or search terms in sorted order.
+ *    - BSTs can be used to implement prefix-matching efficiently
+ *      (though Tries are often used for full-text matching).
+
+ * ✅ Sorted Data Lists:
+ *    - Display or filter sorted items in apps like to-do lists, contacts,
+ *      financial entries, or product catalogs.
+
+ * ✅ In-Memory Caching:
+ *    - Custom cache logic that prioritizes or quickly retrieves keys
+ *      based on sorted access or timestamps.
+
+ * ✅ Database Indexing (Conceptual Layer):
+ *    - Room, SQLite, or Firebase rely on tree-based structures under the hood
+ *      (like B+ Trees or AVL variants) to speed up query and search.
+
+ * ✅ Real-Time Leaderboards:
+ *    - BST-like structure can maintain top N scores in sorted order
+ *      with efficient insert/search for new player entries.
+
+ * 🔹 Use BST when:
+ *    - You want to maintain a sorted collection in memory
+ *    - You need fast insert, lookup, and delete operations
+ */

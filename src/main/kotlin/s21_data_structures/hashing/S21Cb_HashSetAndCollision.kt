@@ -60,3 +60,29 @@ class BadHash(val data: String) {
  * ✅ Collisions are possible but resolved internally
  * ✅ Poor hashCode implementations reduce performance
  */
+
+
+/*
+ * -----------------------------------------------------
+ * 📱 HashSet in Android – Real Use Cases
+ * -----------------------------------------------------
+ *
+ * ✅ Unique User IDs in Chat:
+ *    - Track which users have joined a group or read a message without duplicates.
+ *
+ * ✅ Permission Checks:
+ *    - Maintain a set of granted runtime permissions to avoid repeated requests.
+ *
+ * ✅ Visited Screens Tracking:
+ *    - Record which onboarding or tutorial screens a user has seen.
+ *
+ * ✅ Unique Tags in Note Apps:
+ *    - Manage a user’s set of tags or categories without repetition.
+ *
+ * ✅ Input Validation:
+ *    - Check for duplicate entries in forms (e.g., unique email addresses).
+ *
+ * 🔹 Use HashSet when:
+ *    - You need to enforce uniqueness with average O(1) add/contains.
+ *    - Order is irrelevant and duplicates must be prevented.
+ */

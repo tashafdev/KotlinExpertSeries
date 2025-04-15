@@ -6,13 +6,33 @@ package s21_data_structures.trees
  * -----------------------------------------------------
  * ✅ Lecture: Binary Tree Traversals (S21Bc_BinaryTreeTraversal.kt)
  * -----------------------------------------------------
- * Traversal = Visiting all nodes in a tree in a specific order.
- * Types:
- * - Preorder (Root → Left → Right)
- * - Inorder (Left → Root → Right)
- * - Postorder (Left → Right → Root)
- * - Level Order (Top to Bottom, Left to Right)
+ *
+ * 📌 Traversal refers to the process of visiting each node in a tree exactly once,
+ *     in a specific, well-defined order.
+ *
+ * 🧠 Why is traversal important?
+ * - Allows you to print, search, modify, or evaluate the structure.
+ * - Different traversal orders solve different problems (e.g., sorted output, expression evaluation).
+ *
+ * 🔄 Types of Traversals:
+ *
+ * 1️⃣ Preorder       → Root → Left → Right
+ *     - Use case: Serialize or clone a tree structure.
+ *
+ * 2️⃣ Inorder        → Left → Root → Right
+ *     - Use case: Retrieve sorted data (in BSTs).
+ *
+ * 3️⃣ Postorder      → Left → Right → Root
+ *     - Use case: Safely delete nodes, evaluate expression trees.
+ *
+ * 4️⃣ Level Order    → Breadth-First (Top to Bottom, Left to Right)
+ *     - Use case: UI layout trees, file systems, social graphs.
+ *
+ * 🧠 Tip:
+ * - Recursive methods are common, but iterative methods with stack/queue
+ *   are used in interview scenarios for space optimization.
  */
+
 
 import java.util.LinkedList
 import java.util.Queue
@@ -102,4 +122,35 @@ fun main() {
  * ✅ Each traversal has a use-case depending on when/what you want to access
  * ✅ Understand the recursive vs iterative nature of each
  * ✅ Level Order requires a Queue (Breadth-First)
+ */
+
+
+/*
+ * -----------------------------------------------------
+ * 📱 Binary Tree in Android – Real Use Cases
+ * -----------------------------------------------------
+ *
+ * ✅ View Hierarchy Rendering:
+ *    - The entire UI layout is a tree of views (ViewGroup → View → View).
+ *    - `ConstraintLayout`, `LinearLayout`, etc., follow parent-child relationships.
+
+ * ✅ Navigation Graph (Jetpack):
+ *    - Represents destinations and subgraphs as a hierarchical structure.
+ *    - Supports nested graphs and backstack traversal.
+
+ * ✅ XML Layout Parsing:
+ *    - Android parses XML into a tree structure before rendering.
+
+ * ✅ File System Navigation:
+ *    - Folder-to-file hierarchy in file manager apps mimics a binary/N-ary tree.
+
+ * ✅ Expression Evaluation:
+ *    - Calculator or parser apps use expression trees to compute results.
+ *
+ * ✅ AI & Decision Trees:
+ *    - Game AI, recommendation engines, or form validation flows.
+
+ * 🔹 Use Binary Trees when:
+ *    - You need to represent hierarchical relationships.
+ *    - You need to traverse, search, or modify data in a structured way.
  */

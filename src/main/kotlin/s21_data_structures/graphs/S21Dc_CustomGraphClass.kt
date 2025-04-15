@@ -81,3 +81,15 @@ fun main() {
  * ✅ Supports adding/removing vertices & edges
  * ✅ Easily extendable to weighted or directed graphs
  */
+
+
+/*
+ * -----------------------------------------------------
+ * 📱 Custom Graph Class in Android – Real Use Cases (S21Dc_CustomGraphClass.kt)
+ * -----------------------------------------------------
+ *
+ * ✅ Dynamic Feature Dependencies: Model relationships between on-demand modules.
+ * ✅ In-App Workflow Engine: Represent task states and transitions in business workflows.
+ * ✅ Custom UI Component Graphs: Manage inter-component message routing in complex layouts.
+ * ✅ Analytics Event Flow: Model event propagation paths for user journey analysis.
+ */

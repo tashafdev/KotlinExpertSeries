@@ -9,6 +9,21 @@ package s21_data_structures.advanced
  * This lecture shows how to implement a custom generic Stack class in Kotlin.
  */
 
+/*
+ * -----------------------------------------------------
+ * ✅ Lecture: Custom Stack Class (S21Da_CustomStackClass.kt)
+ * -----------------------------------------------------
+ * A Stack is a LIFO (Last In, First Out) data structure.
+ * It stores elements in order of insertion and removes them in reverse order.
+ *
+ * Key Operations:
+ * - push(item): Add an element to the top of the stack.
+ * - pop(): Remove and return the top element; returns null if empty.
+ * - peek(): Return the top element without removing it; returns null if empty.
+ * - isEmpty(): Check if the stack has no elements.
+ * - size(): Get the number of elements in the stack.
+ */
+
 class CustomStack<T> {
     private val items = mutableListOf<T>()
 
@@ -60,4 +75,22 @@ fun main() {
  * ✅ Core operations: push, pop, peek, isEmpty
  * ✅ Reusable for any data type using generics
  * ✅ Often used in recursive and backtracking problems
+ */
+
+
+/*
+ * 🔍 Android Use Cases:
+ * - Fragment Back Stack Management:
+ *    Manage navigation history in single-activity apps.
+ * - Undo/Redo Functionality:
+ *    Support undo operations in text editors or drawing apps.
+ * - Navigation History:
+ *    Track screens or user actions for custom back handling.
+ * - Expression Evaluation:
+ *    Use a stack to evaluate arithmetic expressions in calculator apps.
+ *
+ * 🔟 Summary:
+ * ✅ Stack = LIFO (Last In, First Out)
+ * ✅ Provides push, pop, peek, isEmpty, size operations
+ * ✅ Ideal for ordered state management and undo history
  */

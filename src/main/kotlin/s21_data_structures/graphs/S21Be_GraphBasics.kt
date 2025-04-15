@@ -5,7 +5,7 @@ package s21_data_structures.graphs
  * -----------------------------------------------------
  * ✅ Lecture: Graph Basics (S21Be_GraphBasics.kt)
  * -----------------------------------------------------
- * A Graph is a non-linear data structure consisting of:
+ * A Graph is a non‑linear data structure consisting of:
  * - Nodes (aka Vertices)
  * - Edges (connections between nodes)
  * Graphs can be:
@@ -15,7 +15,7 @@ package s21_data_structures.graphs
  */
 
 // 1️⃣ Define Graph using Adjacency List
-class Graph {
+class S21BeGraphBasics {
     private val adjList: HashMap<String, MutableList<String>> = HashMap()
 
     // Add node
@@ -41,7 +41,7 @@ class Graph {
 fun main() {
     println("\n✅ Graph Basics Demo")
 
-    val graph = Graph()
+    val graph = S21BeGraphBasics()
 
     // 2️⃣ Create vertices
     listOf("A", "B", "C", "D", "E").forEach { graph.addVertex(it) }
@@ -57,14 +57,28 @@ fun main() {
 }
 
 /*
- * 🔍 Real-World Use Cases:
- * - Maps and navigation systems
- * - Social networks (friends/followers)
- * - Web page linking
- * - Network routing algorithms
+ * 🔍 Real‑World Use Cases (Android):
+ * - Maps & navigation (e.g., offline routing)
+ * - Social graphs (friends/followers)
+ * - In‑app web‑view link graphs
+ * - Network topology visualizers
  *
  * 🔟 Summary:
  * ✅ Graph = nodes + edges
- * ✅ Represented using Adjacency List (most common) or Matrix
- * ✅ Used in countless real-world systems requiring relationships and paths
+ * ✅ Adjacency List is most common
+ * ✅ Used everywhere relationships or paths matter
+ */
+
+
+/*
+ * -----------------------------------------------------
+ * 📱 Graph Basics – Android Use Cases
+ * -----------------------------------------------------
+ * - Maps & navigation (e.g., offline routing)
+ * - Social graphs (friends/followers)
+ * - In-app web-view link graphs
+ * - Network topology visualizers
+ * - Dependency graphs in modular apps
+ * - Screen flow graphs for analytics
+ * - Content recommendation networks
  */
